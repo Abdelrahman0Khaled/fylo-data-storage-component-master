@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-image: url(images/bg-mobile.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 975px){
+    body{
+        background-image: url(images/bg-desktop.png) ;
+        background-position: 0 100%;
+        background-color: hsl(229, 57%, 11%);
+        background-size:100%;
+    }
+}
+/* background poblem  */
+
+.contener{
+    width: 380px;
+}
+
+@media (min-width:975px){
+    .contener{
+        width: 975px;
+    }
+
+}
+
+.contener .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@media (min-width:975px){
+.contener .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+}
+
+.contener .main .fylo-files{
+    background-color: hsl(228, 56%, 26%);
+    padding: 30px 30px 0 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-top-right-radius: 100px;
+    width: 300px;
+    /* height: 250px; */
+    margin-bottom: 20px;
+}
+@media (min-width:975px){
+    .contener .main .fylo-files{
+        background-color: hsl(228, 56%, 26%);
+        padding: 30px 30px 0 30px;
+        margin-right: 30px;
+        width: 320px;
+
+    }
+}
+.contener .main .fylo-files .head{
+margin-bottom: 30px;
+}
+
+.contener .main .fylo-files .head img{
+    width: 50%;
+}
+
+.contener .main .fylo-files .files{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 35px;
+}
+
+.contener .main .fylo-files .files a {
+    background-color: hsl(229, 57%, 11%);
+    padding: 21px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.contener .main .fylo-files .files :first-child{
+    margin-left: 0;
+}
+/* take a long look */
+
+.contener .main .fylo-progress{
+    width: 300px;
+    padding: 30px 20px;
+    background-color: hsl(228, 56%, 26%);
+    color: hsl(243, 100%, 93%);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+}
+@media (min-width:975px){
+    .contener .main .fylo-progress{
+        width: 500px;
+        margin-top: 20px;
+
+    }
+}
+
+.contener .main .fylo-progress .prog-head{
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width:975px){
+    .contener .main .fylo-progress .prog-head{
+        justify-content: flex-start;
+        font-size: 12px;
+
+    }
+}
+
+.contener .main .fylo-progress .prog-head span{
+    font-weight: bold;
+
+}
+
+.contener .main .fylo-progress .prog-bar{
+    width:100%;
+    height: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 5px 2.5px;
+    background-color: hsl(228, 56%, 20%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.contener .main .fylo-progress .prog-bar{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.contener .main .fylo-progress .prog-bar div{
+    width:70%;
+    height: 15px;
+    background: linear-gradient( to right ,hsl(6, 100%, 80%) , hsl(335, 100%, 65% ) ) ;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    z-index: 999;
+    position: relative;
+}
+
+.contener .main .fylo-progress .prog-bar div::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color:hsl(243, 100%, 93%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 999;
+    top: 0;
+    margin-top: 2.5px;
+    right: 0;
+    margin-right: 2.5px;
+}
+
+.giga-gb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+@media (min-width:975px) {
+    .giga-gb{
+        margin-bottom: 10px;
+
+    }
+}
+
+.giga-left{
+    width: 160px;
+    height: 70px;
+    position: absolute;
+    background-color: hsl(243, 100%, 93%);
+    color: hsl(229, 57%, 11%);
+    font-weight: bold;
+    font-size: 2em;
+    padding: 15px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    top: 100%;
+    margin-top: -35px;
+    left: 50%;
+    margin-left: -80px;
+}
+@media (min-width:975px){
+    .giga-left{
+        top: -5%;
+        margin-top: -35px;
+        left: 80%;
+        margin-left: -80px;
+        padding: 10px 20px;
+
+    }
+
+    .giga-left::before{
+        content: "";
+        position: absolute;
+        /* background-color: hsl(243, 100%, 93%); */
+        /* width: 50px;
+        height: 50px; */
+        border-color: hsl(243, 100%, 93%) hsl(243, 100%, 93%) transparent transparent;
+        border-width: 15px;
+        border-style: solid;
+        top: 80%;
+        right:0;
+    }
+}
+.giga-left span{
+    color: hsl(229, 7%, 55%);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: block;
+    margin-top: 5px;
+}
+
+
+/* mobile design is DONE */
+/* Desktop design is DONE */
+/* done الحمدلله */
+
